@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News & Education Platform</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    {% if user.is_authenticated %}
+    <script>
+        window.USER_DATA = {
+            isAuthenticated: true,
+            username: "{{ user.username }}",
+            email: "{{ user.email }}",
+            fullName: "{{ user.get_full_name }}",
+            isStaff: {{ user.is_staff|lower }},
+        };
+    </script>
+    {% else %}
+    <script>
+        window.USER_DATA = {
+            isAuthenticated: false,
+            username: null,
+            email: null,
+            fullName: null,
+            isStaff: false,
+        };
+    </script>
+    {% endif %}
+</head>
+<body>
+    <div id="root"></div>
+    {% if debug %}
+    <script type="module" src="http://localhost:5173/src/main.jsx"></script>
+    {% else %}
+    <!-- Add production build script here -->
+    {% endif %}
+</body>
+</html> 
