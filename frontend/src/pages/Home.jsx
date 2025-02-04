@@ -1,7 +1,7 @@
 import { Typography, Box, Container, Grid, Button } from '@mui/material';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FiArrowRight, FiBook, FiNewspaper, FiYoutube } from 'react-icons/fi';
+import { FiArrowRight, FiBook, FiFileText, FiYoutube } from 'react-icons/fi';
 import { Link as RouterLink } from 'react-router-dom';
 
 const FeatureCard = ({ icon: Icon, title, description, to, delay }) => {
@@ -81,7 +81,7 @@ function Home() {
       to: '/courses',
     },
     {
-      icon: FiNewspaper,
+      icon: FiFileText,
       title: 'AI News',
       description: 'Stay updated with the latest developments in artificial intelligence and technology.',
       to: '/news',
@@ -152,7 +152,7 @@ function Home() {
                 size="large"
                 component={RouterLink}
                 to="/news"
-                endIcon={<FiNewspaper />}
+                endIcon={<FiFileText />}
               >
                 Read News
               </Button>

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { AppBar, Toolbar, Typography, Button, Box, Container, IconButton, useScrollTrigger } from '@mui/material';
 import { Link as RouterLink, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiHome, FiBook, FiNewspaper, FiYoutube } from 'react-icons/fi';
+import { FiHome, FiBook, FiFileText, FiYoutube } from 'react-icons/fi';
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -23,7 +23,7 @@ function Navbar() {
   const navItems = [
     { path: '/', label: 'Home', icon: FiHome },
     { path: '/courses', label: 'Courses', icon: FiBook },
-    { path: '/news', label: 'News', icon: FiNewspaper },
+    { path: '/news', label: 'News', icon: FiFileText },
     { path: '/youtube-stats', label: 'YouTube', icon: FiYoutube },
   ];
 
