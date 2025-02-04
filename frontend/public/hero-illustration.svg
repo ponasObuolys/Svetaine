@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Elements -->
+  <circle cx="400" cy="300" r="250" fill="#F6B17A" fill-opacity="0.1"/>
+  <circle cx="400" cy="300" r="200" fill="#2D3250" fill-opacity="0.05"/>
+  
+  <!-- Decorative Elements -->
+  <path d="M300,200 Q400,100 500,200" stroke="#F6B17A" stroke-width="4" fill="none"/>
+  <path d="M300,400 Q400,500 500,400" stroke="#2D3250" stroke-width="4" fill="none"/>
+  
+  <!-- Abstract Shapes -->
+  <rect x="350" y="250" width="100" height="100" rx="20" fill="#2D3250" fill-opacity="0.8"/>
+  <circle cx="400" cy="300" r="30" fill="#F6B17A"/>
+  
+  <!-- Floating Elements -->
+  <g transform="translate(200,150)">
+    <rect width="60" height="60" rx="10" fill="#424769" fill-opacity="0.6"/>
+    <circle cx="30" cy="30" r="15" fill="#FFD9C0"/>
+  </g>
+  
+  <g transform="translate(500,400)">
+    <rect width="80" height="80" rx="15" fill="#424769" fill-opacity="0.6"/>
+    <circle cx="40" cy="40" r="20" fill="#FFD9C0"/>
+  </g>
+  
+  <!-- Connecting Lines -->
+  <path d="M250,200 L350,300" stroke="#2D3250" stroke-width="2" stroke-dasharray="5,5"/>
+  <path d="M450,300 L550,400" stroke="#2D3250" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Small Decorative Circles -->
+  <circle cx="250" cy="200" r="8" fill="#F6B17A"/>
+  <circle cx="550" cy="400" r="8" fill="#F6B17A"/>
+  
+  <!-- Additional Design Elements -->
+  <path d="M300,300 Q350,250 400,300 Q450,350 500,300" 
+        stroke="#424769" 
+        stroke-width="3" 
+        fill="none"/>
+  
+  <!-- Animated Elements (Note: Animation would be handled by CSS/JS) -->
+  <g id="floating-elements">
+    <circle cx="200" cy="300" r="10" fill="#F6B17A"/>
+    <circle cx="600" cy="300" r="10" fill="#F6B17A"/>
+    <rect x="380" y="180" width="40" height="40" rx="8" fill="#424769"/>
+  </g>
+</svg> 
